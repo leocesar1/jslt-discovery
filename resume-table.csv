@@ -1,0 +1,17 @@
+Operation,Explanation
+ `.`             , The context node  
+ `.<name>`       , [Get value of key](tutorial.md#dot-accessors) `"<name>"` inside an object  
+ `.[<index>]`          , [Get value](tutorial.md#array-indexing) `<index>` inside an array 
+ `.[<from> : <to>]`     , [Array slicing](tutorial.md#array-indexing) 
+ `if (<expr>) <expr> else <expr>` , [If test](tutorial.md#if-expressions) to decide which value to return 
+ `let <name> = <expr>` , [Define a variable](tutorial.md#variables) 
+ `$<name>`             , [Refer to a variable](tutorial.md#variables) 
+ `[for (<expr>) <expr>]` , [Transform an array](tutorial.md#for-expressions) 
+ `{for (<expr>) <expr> : <expr>}` , [Transform an object](tutorial.md#object-for-expressions) 
+ `def <name>(<name>, <name>...) <expr>` , [Declare a function](tutorial.md#function-declarations) 
+ `// <anything up to end of line>` , Comment 
+ `{ <key> : <expr> }`               , [Object constructor](tutorial.md#json-construction) 
+ `{ <key> : <expr>, * : . }`        , Specify one key, [copy rest of input](tutorial.md#object-matching) 
+ `5 * 7 + 23.2`        , Arithmetic operations 
+ `7 < 5`        , Comparators 
+ `7 < 5 and .foo == "yes"` , Boolean operators 
